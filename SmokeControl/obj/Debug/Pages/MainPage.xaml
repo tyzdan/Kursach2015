@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="SmokeControl.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmokeControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Page.Resources>
+        <Style
+            TargetType="Button"
+            x:Name="ButtonStyle">
+            <Setter
+                Property="HorizontalAlignment"
+                Value="Stretch" />
+        </Style>
+    </Page.Resources>
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush
+                Stretch="Fill"
+                ImageSource="ms-appx:///Assets/bg.png" />
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="*" />
+            <ColumnDefinition
+                Width="8*" />
+            <ColumnDefinition
+                Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel
+            Grid.Column="1"
+            VerticalAlignment="Center">
+            <Button x:ConnectionId='1'
+                Content="Statistics"
+                Style="{StaticResource ButtonStyle}"
+                                               />
+            <Button x:ConnectionId='2'
+                Content="Add liquid"
+                Style="{StaticResource ButtonStyle}"
+                                              />
+            <Button x:ConnectionId='3'
+                Content="Information"
+                Style="{StaticResource ButtonStyle}"
+                                                />
+            <Button x:ConnectionId='4'
+                Content="Synchronize"
+                Style="{StaticResource ButtonStyle}"
+                                         />
+            <Button x:ConnectionId='5'
+                Content="Logout"
+                Style="{StaticResource ButtonStyle}"
+                                           />
+        </StackPanel>
+    </Grid>
+</Page>
+

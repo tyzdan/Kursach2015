@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="SmokeControl.Pages.RegistrationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmokeControl.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush
+                Stretch="Fill"
+                ImageSource="ms-appx:///Assets/bg.png" />
+        </Grid.Background>
+        <StackPanel
+            Margin="20"
+            VerticalAlignment="Center">
+            <TextBox
+                x:Name="LoginBox"
+                Header="Login"
+                HorizontalAlignment="Stretch"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="456"
+                InputScope="Default" />
+            <PasswordBox
+                Header="Password"
+                x:Name="PasswordBox_"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Top"
+                Width="456" />
+            <PasswordBox
+                Header="Retype password"
+                x:Name="PasswordBox__"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Top"
+                Width="456" />
+            <Button x:ConnectionId='1'
+                Content="sign up"
+                Name="RegButton"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Top"
+                BorderBrush="#FF3EB843"
+                Foreground="#FF3EB843"
+                Background="{x:Null}"
+                                        />
+        </StackPanel>
+    </Grid>
+</Page>
+
